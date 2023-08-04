@@ -62,3 +62,25 @@ np.save('my_array', x)
 y = np.load('my_array.npy')
 
 ```
+
+### Using Built-in Functions to Create ndarrays
+
+#### Examples:
+
+```
+# We create a 2 x 3 ndarray full of fives. 
+X = np.full((2,3), 5) ==> The np.full() function creates by default an array with the same data type as the constant value used to fill in the array.
+
+# We create a 5 x 5 Identity matrix (diagonal is 1's and other is 0's). 
+X = np.eye(5)
+
+# Create a 4 x 4 diagonal matrix that contains the numbers 10,20,30, and 50
+# on its main diagonal
+X = np.diag([10,20,30,50])
+
+# We create a 1000 x 1000 ndarray of random floats drawn from normal (Gaussian) distribution
+# with a mean of zero and a standard deviation of 0.1.
+X = np.random.normal(0, 0.1, size=(1000,1000))
+```
+- numpy.linspace(start, stop, num=50, endpoint=True, retstep=False, dtype=None, axis=0)
+- additional resource ==> https://numpy.org/devdocs/user/basics.creation.html#array-creation
