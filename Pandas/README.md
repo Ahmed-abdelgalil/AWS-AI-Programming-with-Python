@@ -64,6 +64,24 @@ A Pandas series is a one-dimensional array-like object that can hold many data t
   # We remove apples from our grocery list in place by setting the inplace keyword to True delete from orginal list
   groceries.drop('apples', inplace = True)
 ```
-
+### Arithmetic Operations on pandas Series
+- Just like with NumPy ndarrays, we can perform element-wise arithmetic operations on Pandas Series.
+- We can Use mathematical functions from NumPy to operate on Series like:
+    - np.exp(fruits))
+    - np.sqrt(fruits)
+    - np.power(fruits,2) # We raise all elements of fruits to the power of 2
+- Perform arithmetic operations on selected elements
+#### Example 4. Perform multiplication on a Series having integer and string elements
+```
+  # We multiply our grocery list by 2
+  groceries * 2
+--------------------------
+  eggs                 60
+  apples             12
+  milk         YesYes
+  bread        NoNo
+  dtype: object
+```
+- Note: We can't divide / in example above so we want to make sure that arithmetic operations are valid on* all* the data types of your elements.
 
 
