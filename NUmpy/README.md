@@ -1,4 +1,66 @@
 # Numpy Notes 
+## Glossary 
+**Below is the summary of all the functions and methods**
+### Category: General Purpose
+| Function/Method       | Description                                                                                               |
+| --------------------- | --------------------------------------------------------------------------------------------------------- |
+| `numpy.ndarray.dtype` | Return the data-type of the elements of the array. Remember, arrays are homogeneous.                      |
+| `numpy.ndarray.ndim`  | Return the number of array-dimensions (rank), e.g., it will return 2 for a 4x3 array.                     |
+| `numpy.ndarray.shape` | Return a tuple representing the array dimensions, e.g., it will return (rows,columns) for a rank 2 array. |
+| `numpy.ndarray.size`  | Return the number of elements present in the array.                                                       |
+| `numpy.save`          | Save an array to .npy (numpy) format.                                                                     |
+| `numpy.load`          | Load array from the .npy files.                                                                           |
+| `numpy.random.random` | Return random floats values from the interval [0.0, 1.0), in a specified shape.                          |
+| `numpy.random.randint`| Return random integers from the half-open interval [a, b), in a specified shape.                          |
+| `numpy.random.normal` | Return random samples from a Gaussian (normal) distribution.                                              |
+| `numpy.random.permutation` | Return a randomly permuted sequence from the given list.                                             |
+| `numpy.reshape`       | Reshape an array containing the same elements with a new shape, without affecting the original array.     |
+| `numpy.ndarray.reshape`| Returns an array containing the same elements with a new shape, without affecting the original array.     |
+### Category: Array Creation
+  | Function/Method       | Description                                                                                               |
+| --------------------- | --------------------------------------------------------------------------------------------------------- |
+| `numpy.ones`          | Return a new array of given shape and type, filled with 1s.                                                |
+| `numpy.zeros`         | Return a new array of given shape and type, filled with 0s.                                                |
+| `numpy.full`          | Return a new array of given shape and type, filled with a specific value.                                  |
+| `numpy.eye`           | Return a 2-D array with 1s on the diagonal and 0s elsewhere.                                               |
+| `numpy.diag`          | Extract the diagonal elements.                                                                             |
+| `numpy.unique`        | Return the sorted unique elements of an array.                                                             |
+| `numpy.array`         | Create an n-dimensional array.                                                                             |
+| `numpy.arange`        | Return evenly spaced values within a given half-open interval [a, b).                                      |
+| `numpy.linspace`      | Return evenly spaced numbers over a specified interval [a,b].                                              |
+| `numpy.ndarray.copy`  | Returns a copy of the array.                                                                               |
+### Category: Operating with Elements and Indices
+  | Function/Method             | Description                                                                                                                  |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `numpy.insert`              | Insert values along the given axis before the specified indices.                                                             |
+| `numpy.delete`              | Return a new array, after deleting sub-arrays along a specified axis.                                                        |
+| `numpy.append`              | Append values at the end of the specified array.                                                                             |
+| `numpy.hstack`              | Return a stacked array formed by stacking the given arrays in sequence horizontally (column-wise).                            |
+| `numpy.vstack`              | Return a stacked array formed by stacking the given arrays, will be at least 2-D, in sequence vertically (row-wise).         |
+| `numpy.sort`                | Return a sorted copy of an array.                                                                                             |
+| `numpy.ndarray.sort`        | Sort an array in-place.                                                                                                      |
+### Category: Set Operations
+  | Function/Method          | Description                                                                                                    |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| `numpy.intersect1d`      | Find the intersection of two arrays, i.e., the values common to both arrays.                                    |
+| `numpy.setdiff1d`        | Find the set difference of two arrays, i.e., the values in the first array that are not present in the second. |
+| `numpy.union1d`          | Return the unique, sorted array of values that are in either of the two input arrays.                          |
+### Category: Arithmetic and Statistical Operations
+  | Function/Method               | Description                                                                                       |
+| ----------------------------- | ------------------------------------------------------------------------------------------------- |
+| `numpy.add`                   | Element-wise addition of given arrays.                                                            |
+| `numpy.subtract`              | Element-wise subtraction of arguments of given arrays.                                            |
+| `numpy.multiply`              | Element-wise multiplication of arguments of given arrays.                                         |
+| `numpy.divide`                | Element-wise division of the inputs.                                                              |
+| `numpy.exp`                   | Calculate the exponential of all elements in the input array.                                     |
+| `numpy.power`                 | Raise the first array elements to powers from the second array, element-wise.                     |
+| `numpy.sqrt`                  | Return the non-negative square root of an array, element-wise.                                    |
+| `numpy.ndarray.min`           | Return the minimum value along the specified axis.                                                |
+| `numpy.ndarray.max`           | Return the maximum value along the specified axis.                                                |
+| `numpy.mean`                  | Compute the arithmetic mean along the specified axis.                                             |
+| `numpy.ndarray.mean`          | Compute the arithmetic mean along the specified axis for an ndarray.                              |
+| `numpy.median`                | Compute the median along the specified axis.                                                      |
+
 ### Why use Numpy?
   1. Numpy is speed When performing operations on large arrays NumPy can often perform several orders of magnitude faster than Python lists. This speed comes from the nature of NumPy arrays being     memory-efficient and from optimized algorithms used by NumPy for doing arithmetic, statistical, and linear algebra operations.
   #### Example:
@@ -207,17 +269,3 @@
   - NOTE:
       -  NumPy is able to add 1 x 3 and 3 x 1 ndarrays to 3 x 3 ndarrays by broadcasting the smaller ndarrays along the big ndarray so that they have compatible shapes
    
-### Category: General Purpose
-  ![image](https://github.com/Ahmed-abdelgalil/AWS-AI-Programming-with-Python/assets/103966424/2c2375a7-e892-4e18-9b8d-4940ac93f3ee)
-### Category: Array Creation
-  ![image](https://github.com/Ahmed-abdelgalil/AWS-AI-Programming-with-Python/assets/103966424/d33c3fc5-74fe-4911-bee8-66e60531b6a2)
-### Category: Operating with Elements and Indices
-  ![image](https://github.com/Ahmed-abdelgalil/AWS-AI-Programming-with-Python/assets/103966424/17dbbcab-9e1d-4d4b-b845-0fd474d0a45a)
-### Category: Set Operations
-![image](https://github.com/Ahmed-abdelgalil/AWS-AI-Programming-with-Python/assets/103966424/f1a36f8a-0d87-49ea-9ee2-aa55840b4a72)
-### Category: Arithmetic and Statistical Operations
- ![image](https://github.com/Ahmed-abdelgalil/AWS-AI-Programming-with-Python/assets/103966424/655657a6-d100-450e-8a4d-de23db47d3ba)
-
-
-
-
