@@ -1,4 +1,5 @@
 # Numpy Notes 
+***NumPy*** stands for Numerical Python and it's a fundamental package for scientific computing in Python. NumPy provides Python with an extensive math library capable of performing numerical computations effectively and efficiently.
 ## Glossary 
 **Below is the summary of all the functions and methods**
 ### Category: General Purpose
