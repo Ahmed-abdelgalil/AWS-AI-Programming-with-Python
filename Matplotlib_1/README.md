@@ -25,5 +25,9 @@
 | Example                  | Number of students with a score of 80     | Proportion of students with a score of 80 out of total students |
 | Purpose                  | Describing the frequency of specific values | Comparing distributions across datasets of different sizes |
 
-
+### Glossary
+1. **Univariate visualizations**: Visualize single-variables, such as bar charts, histograms, and line charts.
+2. **Bivariate visualizations**: Plots representing the relationship between two variables measured on the given sample data. These plots help to identify the relationship pattern between the two variables.
+3. **Ordinal data**: It is a categorical data type where the variables have natural and ordered categories. The distances between the categories are unknown, such as the survey options presented on a five-point scale.
+   
 [Matblotlib NoteBook](http://localhost:8888/notebooks/notebooks/matplotlib1.ipynb)
