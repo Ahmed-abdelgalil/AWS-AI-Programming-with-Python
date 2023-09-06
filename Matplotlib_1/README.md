@@ -24,3 +24,6 @@
 | Notation                 | Usually expressed as a whole number       | Expressed as a decimal or percentage          |
 | Example                  | Number of students with a score of 80     | Proportion of students with a score of 80 out of total students |
 | Purpose                  | Describing the frequency of specific values | Comparing distributions across datasets of different sizes |
+
+
+[Matblotlib NoteBook](http://localhost:8888/notebooks/notebooks/matplotlib1.ipynb)
