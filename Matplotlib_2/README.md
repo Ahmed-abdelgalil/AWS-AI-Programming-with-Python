@@ -14,3 +14,28 @@
   2. *Transparency*: By setting the transparency of the points, you can make the overlapping regions darker, while the less dense areas become lighter. This allows you to visually perceive the density of the data points and identify the areas of high concentration.
   
   3. *Jitter*: Jittering adds a small amount of random noise to the position of each point. This spreads out the points with the same values over a small area, making it easier to see the distribution and identify trends, especially when one or both variables are discrete.
+
+### Glossary 
+ #### Univariate Visualization Functions
+ | Plot type    | matplotlib.pyplot function | seaborn function                                        |
+ |--------------|----------------------------|--------------------------------------------------------|
+ | Bar Chart    | ---                        | countplot() <br> barplot()                             |
+ | Pie Chart    | pie()                      | ---                                                    |
+ | Histogram    | hist()                     | distplot() <br> displot() <br> histplot()               |
+ 
+ #### Bivariate Visualization Functions
+  | Plot type               | matplotlib.pyplot function | seaborn function                                        |
+ |-------------------------|----------------------------|--------------------------------------------------------|
+ | Scatterplot             | scatter()                  | regplot()                                              |
+ | Heat Map                | hist2d()                   | heatmap()                                              |
+ | Violin Plot             | ---                        | violinplot()                                           |
+ | Box Plot                | ---                        | boxplot()                                              |
+ | Clustered Bar Chart     | ---                        | countplot() <br> heatmap()                             |
+ | Faceting                | ---                        | FacetGrid()                                            |
+ | Bar Plot                | ---                        | barplot()                                              |
+ | Point Plot              | ---                        | pointplot()                                            |
+ | Line Plot               | errorbar()                 | ---                                                    |
+
+
+
+ [Mtaplotlib2 NoteBook](http://localhost:8888/notebooks/notebooks/matplotlib2.ipynb)
