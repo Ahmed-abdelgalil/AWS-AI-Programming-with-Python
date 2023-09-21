@@ -49,3 +49,6 @@ $$Error(y, \hat{y}) = - y \log(\hat{y}) - (1-y) \log(1-\hat{y})$$
 $$ w_i \longrightarrow w_i + \alpha (y - \hat{y}) x_i$$
 
 $$ b \longrightarrow b + \alpha (y - \hat{y})$$
+
+
+Here's the general algorithm for updating the weights with gradient descent:
